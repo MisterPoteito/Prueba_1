@@ -88,12 +88,8 @@ public class Usuario {
 
     
     public void setTelefono(int Telefono) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(Telefono);
+        this.Telefono = Telefono;
         
-        if(sb.length() > 7){
-            this.Telefono = Telefono;
-        }
     }
     public String getEmail() {
         return Email;
@@ -136,6 +132,11 @@ public class Usuario {
         } catch (Exception e) {
         }
         return validacion;
+    
+    }
+
+    public void setF_Nac(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

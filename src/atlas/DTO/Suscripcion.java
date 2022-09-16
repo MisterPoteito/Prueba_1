@@ -5,15 +5,25 @@ import java.util.Date;
 
 public class Suscripcion {
     private int Id_Suscripcion;
+    private String Usuario_Suscripcion;
     private Date F_Inicio_Suscripcion;
     private int Valor_Suscripcion;
     private String Equipos;
     
     public Suscripcion(){
         this.Id_Suscripcion= 0;
+        this.Usuario_Suscripcion= "";
         this.F_Inicio_Suscripcion= new Date();
         this.Valor_Suscripcion= 0;
         this.Equipos= "";
+    }
+
+    public String getUsuario_Suscripcion() {
+        return Usuario_Suscripcion;
+    }
+
+    public void setUsuario_Suscripcion(String Usuario_Suscripcion) {
+        this.Usuario_Suscripcion = Usuario_Suscripcion;
     }
 
     public int getId_Suscripcion() {
